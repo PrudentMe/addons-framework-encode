@@ -15,7 +15,7 @@ $ npm install --save
 Usage
 =====
 
-To encode a message that complies to Prudent's add-on communication protocol:
+To encode a message that comply to Prudent's add-on communication protocol:
 
 ```
 encode.protocol(messageName, content);
@@ -32,6 +32,6 @@ Protocols
 
 Prudent to Add-on:
 
-| Message name | Expected content                            | Type of add-on applicable | Example                |
-|--------------|---------------------------------------------|---------------------------|------------------------|
-| file         | Absolute path and filename of file to parse | Parser                    | /Users/Cody/August.csv |
+| Message name | Expected content                            | Type of add-on applicable | Example                | Data type   |
+|--------------|---------------------------------------------|---------------------------|------------------------|-------------|
+| file         | Absolute path and filename of file to parse | Parser                    | /Users/Cody/August.csv | String      |
