@@ -1,3 +1,5 @@
+var dateFormat = require('dateformat');
+
 exports.protocol = (name, content) => {
 
     return JSON.stringify({
@@ -5,4 +7,10 @@ exports.protocol = (name, content) => {
         content: content
     });
     
+}
+
+exports.dateString = (dateString) => {
+
+    return dateFormat(dateString, "yyyy/mm/dd");
+
 }
