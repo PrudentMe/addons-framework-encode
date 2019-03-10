@@ -33,6 +33,16 @@ To format a date string into a Prudent compatible string:
 console.log(encode.dateString('2019-12-25'));
 ```
 
+To format a transaction to be Prudent compatible:
+
+```
+console.log(encode.transaction(date, payee, value, description, debit, credit, type));
+```
+
+```debit```, ```credit``` and ```type``` are optional. 
+
+See format section below for the expected type that these parameters.
+
 Protocols
 =========
 
@@ -54,3 +64,19 @@ yyyy/mm/dd
 ```
 
 Use ```encode.dateString()``` to convert most popular date strings to this format.
+
+Expected transaction object format:
+
+```
+{
+    date: date, // String: yyyy/mm/dd as per above
+    payee: payee, // String
+    value: value, // Numerics in String form, e.g. '3.89'
+    description: description, // String
+    debit: debit, // String, Optional
+    credit: credit, // String, Optional
+    type: type // String: DEBIT | CREDIT, Optional 
+} 
+```
+
+Use ```encode.transaction()``` to create such an object.
