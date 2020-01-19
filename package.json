@@ -1,10 +1,6 @@
 {
   "name": "@prudent/encode",
-<<<<<<< HEAD
-  "version": "2.2.0",
-=======
   "version": "2.3.0",
->>>>>>> 9310d0992e5c70713ac0adb71c83e3497eac683a
   "description": "Encode messages using Prudent's IPC protocol (for communicating between add-ons and Prudent). Also, date() helps convert date strings to comply to Prudent's date string protocol",
   "main": "index.js",
   "scripts": {
