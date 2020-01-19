@@ -24,7 +24,7 @@ exports.dateString = (dateString) => {
     
 }
 
-exports.transaction = (date, payee, value, description, debit, credit, type) => {
+exports.transaction = (date, payee, value, description, debit, credit, type, commodity) => {
 
     return {
         date: date,
@@ -33,7 +33,8 @@ exports.transaction = (date, payee, value, description, debit, credit, type) => 
         description: description,
         debit: debit,
         credit: credit,
-        type: type
+        type: type,
+        commodity: commodity
     }    
 
 }
