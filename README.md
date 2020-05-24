@@ -41,7 +41,13 @@ console.log(encode.transaction(date, payee, value, description, debit, credit, t
 
 ```debit```, ```credit``` and ```type``` are optional. 
 
-See format section below for the expected type that these parameters.
+To create a chart object that can be sent to a Prudent compatible client:
+
+```
+encode.chart(visualizer, type, title, content);
+```
+
+See Format section below for the expected type that these parameters.
 
 Protocols
 =========
@@ -80,3 +86,16 @@ Expected transaction object format:
 ```
 
 Use ```encode.transaction()``` to create such an object.
+
+Expected chart object format:
+
+```
+{
+        visualizer: visualizer, // String, i.e. 'Nivo'
+        type: type, // String, i.e. 'ResponsiveBar'
+        title: title, // String, i.e. 'Interest earnings'
+        chart: content // Object, i.e. props for Responsive Bar component
+}
+```
+
+Use ```encode.chart()``` to create such an object.

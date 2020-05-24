@@ -38,3 +38,14 @@ exports.transaction = (date, payee, value, description, debit, credit, type, com
     }    
 
 }
+
+exports.chart = (visualizer, type, title, content) => {
+
+    return {
+        visualizer: visualizer,
+        type: type,
+        title: title,
+        chart: content
+    }    
+
+}
